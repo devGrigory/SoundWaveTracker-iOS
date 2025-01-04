@@ -1,0 +1,739 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C9E9269F2D2672C900865FD7 /* Adriano-celentano-o-perke.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9E9268B2D2672C900865FD7 /* Adriano-celentano-o-perke.mp3 */; };
+		C9E926A02D2672C900865FD7 /* Holidays-in-miami.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9E9268C2D2672C900865FD7 /* Holidays-in-miami.mp3 */; };
+		C9E926A12D2672C900865FD7 /* Piano-moment.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9E9268D2D2672C900865FD7 /* Piano-moment.mp3 */; };
+		C9E926A22D2672C900865FD7 /* Ricchi e Poveri - Come Vorrei.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9E9268E2D2672C900865FD7 /* Ricchi e Poveri - Come Vorrei.mp3 */; };
+		C9E926A32D2672C900865FD7 /* Ricchi e Poveri - Sarа perche ti amo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9E9268F2D2672C900865FD7 /* Ricchi e Poveri - Sarа perche ti amo.mp3 */; };
+		C9E926A42D2672C900865FD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9E926982D2672C900865FD7 /* Assets.xcassets */; };
+		C9E926A62D2672C900865FD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9E9269B2D2672C900865FD7 /* LaunchScreen.storyboard */; };
+		C9E926A72D2672C900865FD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9E9269D2D2672C900865FD7 /* Main.storyboard */; };
+		C9E926A82D2672C900865FD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E926882D2672C900865FD7 /* AppDelegate.swift */; };
+		C9E926A92D2672C900865FD7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E926892D2672C900865FD7 /* SceneDelegate.swift */; };
+		C9E926AA2D2672C900865FD7 /* AudioPlayerNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E926912D2672C900865FD7 /* AudioPlayerNode.swift */; };
+		C9E926AB2D2672C900865FD7 /* AudioWaveformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E926922D2672C900865FD7 /* AudioWaveformView.swift */; };
+		C9E926AC2D2672C900865FD7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E926942D2672C900865FD7 /* Constants.swift */; };
+		C9E926AD2D2672C900865FD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E926962D2672C900865FD7 /* ViewController.swift */; };
+		C9E926B02D26731800865FD7 /* SoundWaveTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E926AE2D26731800865FD7 /* SoundWaveTrackerTests.swift */; };
+		C9E926B42D26731D00865FD7 /* SoundWaveTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E926B12D26731D00865FD7 /* SoundWaveTrackerUITests.swift */; };
+		C9E926B52D26731D00865FD7 /* SoundWaveTrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E926B22D26731D00865FD7 /* SoundWaveTrackerUITestsLaunchTests.swift */; };
+		C9E926BA2D2682FB00865FD7 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E926B92D2682F300865FD7 /* UIColor+Extensions.swift */; };
+		C9E926BF2D26F0EB00865FD7 /* AudioFileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E926BE2D26F0E900865FD7 /* AudioFileService.swift */; };
+		C9E926C12D271E2900865FD7 /* AudioConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E926C02D271E2400865FD7 /* AudioConstants.swift */; };
+		C9E926C92D284A5B00865FD7 /* AVConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E926C82D284A5900865FD7 /* AVConstants.swift */; };
+		C9E926CB2D284BB600865FD7 /* WaveformStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E926CA2D284BB000865FD7 /* WaveformStyle.swift */; };
+		C9E926CF2D28532200865FD7 /* ImageSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E926CE2D28530700865FD7 /* ImageSet.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C9E926072D224F7400865FD7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9E925E82D224F7400865FD7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9E925EF2D224F7400865FD7;
+			remoteInfo = SoundWaveTracker;
+		};
+		C9E926112D224F7400865FD7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9E925E82D224F7400865FD7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9E925EF2D224F7400865FD7;
+			remoteInfo = SoundWaveTracker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C9E925F02D224F7400865FD7 /* SoundWaveTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundWaveTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9E926062D224F7400865FD7 /* SoundWaveTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoundWaveTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9E926102D224F7400865FD7 /* SoundWaveTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoundWaveTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9E926882D2672C900865FD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C9E926892D2672C900865FD7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C9E9268B2D2672C900865FD7 /* Adriano-celentano-o-perke.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Adriano-celentano-o-perke.mp3"; sourceTree = "<group>"; };
+		C9E9268C2D2672C900865FD7 /* Holidays-in-miami.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Holidays-in-miami.mp3"; sourceTree = "<group>"; };
+		C9E9268D2D2672C900865FD7 /* Piano-moment.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Piano-moment.mp3"; sourceTree = "<group>"; };
+		C9E9268E2D2672C900865FD7 /* Ricchi e Poveri - Come Vorrei.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Ricchi e Poveri - Come Vorrei.mp3"; sourceTree = "<group>"; };
+		C9E9268F2D2672C900865FD7 /* Ricchi e Poveri - Sarа perche ti amo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Ricchi e Poveri - Sarа perche ti amo.mp3"; sourceTree = "<group>"; };
+		C9E926912D2672C900865FD7 /* AudioPlayerNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerNode.swift; sourceTree = "<group>"; };
+		C9E926922D2672C900865FD7 /* AudioWaveformView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioWaveformView.swift; sourceTree = "<group>"; };
+		C9E926942D2672C900865FD7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C9E926962D2672C900865FD7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C9E926982D2672C900865FD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C9E926992D2672C900865FD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9E9269A2D2672C900865FD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C9E9269C2D2672C900865FD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C9E926AE2D26731800865FD7 /* SoundWaveTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundWaveTrackerTests.swift; sourceTree = "<group>"; };
+		C9E926B12D26731D00865FD7 /* SoundWaveTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundWaveTrackerUITests.swift; sourceTree = "<group>"; };
+		C9E926B22D26731D00865FD7 /* SoundWaveTrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundWaveTrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C9E926B92D2682F300865FD7 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		C9E926BE2D26F0E900865FD7 /* AudioFileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioFileService.swift; sourceTree = "<group>"; };
+		C9E926C02D271E2400865FD7 /* AudioConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioConstants.swift; sourceTree = "<group>"; };
+		C9E926C82D284A5900865FD7 /* AVConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVConstants.swift; sourceTree = "<group>"; };
+		C9E926CA2D284BB000865FD7 /* WaveformStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveformStyle.swift; sourceTree = "<group>"; };
+		C9E926CE2D28530700865FD7 /* ImageSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSet.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C9E925ED2D224F7400865FD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9E926032D224F7400865FD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9E9260D2D224F7400865FD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C9E925E72D224F7400865FD7 = {
+			isa = PBXGroup;
+			children = (
+				C9E9269E2D2672C900865FD7 /* SoundWaveTracker */,
+				C9E926AF2D26731800865FD7 /* SoundWaveTrackerTests */,
+				C9E926B32D26731D00865FD7 /* SoundWaveTrackerUITests */,
+				C9E925F12D224F7400865FD7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C9E925F12D224F7400865FD7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9E925F02D224F7400865FD7 /* SoundWaveTracker.app */,
+				C9E926062D224F7400865FD7 /* SoundWaveTrackerTests.xctest */,
+				C9E926102D224F7400865FD7 /* SoundWaveTrackerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9E926902D2672C900865FD7 /* AudioLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				C9E9268B2D2672C900865FD7 /* Adriano-celentano-o-perke.mp3 */,
+				C9E9268C2D2672C900865FD7 /* Holidays-in-miami.mp3 */,
+				C9E9268D2D2672C900865FD7 /* Piano-moment.mp3 */,
+				C9E9268E2D2672C900865FD7 /* Ricchi e Poveri - Come Vorrei.mp3 */,
+				C9E9268F2D2672C900865FD7 /* Ricchi e Poveri - Sarа perche ti amo.mp3 */,
+			);
+			path = AudioLibrary;
+			sourceTree = "<group>";
+		};
+		C9E926952D2672C900865FD7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C9E926B92D2682F300865FD7 /* UIColor+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C9E926972D2672C900865FD7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C9E926962D2672C900865FD7 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C9E9269E2D2672C900865FD7 /* SoundWaveTracker */ = {
+			isa = PBXGroup;
+			children = (
+				C9E926882D2672C900865FD7 /* AppDelegate.swift */,
+				C9E926892D2672C900865FD7 /* SceneDelegate.swift */,
+				C9E926B62D2681D900865FD7 /* Model */,
+				C9E926B72D2681E800865FD7 /* View */,
+				C9E926972D2672C900865FD7 /* Controller */,
+				C9E926BC2D2699B600865FD7 /* Resources */,
+			);
+			path = SoundWaveTracker;
+			sourceTree = "<group>";
+		};
+		C9E926AF2D26731800865FD7 /* SoundWaveTrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				C9E926AE2D26731800865FD7 /* SoundWaveTrackerTests.swift */,
+			);
+			path = SoundWaveTrackerTests;
+			sourceTree = "<group>";
+		};
+		C9E926B32D26731D00865FD7 /* SoundWaveTrackerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C9E926B12D26731D00865FD7 /* SoundWaveTrackerUITests.swift */,
+				C9E926B22D26731D00865FD7 /* SoundWaveTrackerUITestsLaunchTests.swift */,
+			);
+			path = SoundWaveTrackerUITests;
+			sourceTree = "<group>";
+		};
+		C9E926B62D2681D900865FD7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C9E926BB2D26983400865FD7 /* Audio */,
+				C9E926BD2D26F03A00865FD7 /* Services */,
+				C9E926952D2672C900865FD7 /* Extensions */,
+				C9E926B82D26826F00865FD7 /* Helpers */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C9E926B72D2681E800865FD7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C9E926922D2672C900865FD7 /* AudioWaveformView.swift */,
+				C9E926CA2D284BB000865FD7 /* WaveformStyle.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C9E926B82D26826F00865FD7 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C9E926C02D271E2400865FD7 /* AudioConstants.swift */,
+				C9E926C82D284A5900865FD7 /* AVConstants.swift */,
+				C9E926942D2672C900865FD7 /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C9E926BB2D26983400865FD7 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				C9E926912D2672C900865FD7 /* AudioPlayerNode.swift */,
+				C9E926902D2672C900865FD7 /* AudioLibrary */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		C9E926BC2D2699B600865FD7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C9E926CE2D28530700865FD7 /* ImageSet.swift */,
+				C9E926982D2672C900865FD7 /* Assets.xcassets */,
+				C9E9269B2D2672C900865FD7 /* LaunchScreen.storyboard */,
+				C9E9269D2D2672C900865FD7 /* Main.storyboard */,
+				C9E926992D2672C900865FD7 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C9E926BD2D26F03A00865FD7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C9E926BE2D26F0E900865FD7 /* AudioFileService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C9E925EF2D224F7400865FD7 /* SoundWaveTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9E926192D224F7400865FD7 /* Build configuration list for PBXNativeTarget "SoundWaveTracker" */;
+			buildPhases = (
+				C9E925EC2D224F7400865FD7 /* Sources */,
+				C9E925ED2D224F7400865FD7 /* Frameworks */,
+				C9E925EE2D224F7400865FD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SoundWaveTracker;
+			packageProductDependencies = (
+			);
+			productName = SoundWaveTracker;
+			productReference = C9E925F02D224F7400865FD7 /* SoundWaveTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C9E926052D224F7400865FD7 /* SoundWaveTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9E9261E2D224F7400865FD7 /* Build configuration list for PBXNativeTarget "SoundWaveTrackerTests" */;
+			buildPhases = (
+				C9E926022D224F7400865FD7 /* Sources */,
+				C9E926032D224F7400865FD7 /* Frameworks */,
+				C9E926042D224F7400865FD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C9E926082D224F7400865FD7 /* PBXTargetDependency */,
+			);
+			name = SoundWaveTrackerTests;
+			packageProductDependencies = (
+			);
+			productName = SoundWaveTrackerTests;
+			productReference = C9E926062D224F7400865FD7 /* SoundWaveTrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C9E9260F2D224F7400865FD7 /* SoundWaveTrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9E926212D224F7400865FD7 /* Build configuration list for PBXNativeTarget "SoundWaveTrackerUITests" */;
+			buildPhases = (
+				C9E9260C2D224F7400865FD7 /* Sources */,
+				C9E9260D2D224F7400865FD7 /* Frameworks */,
+				C9E9260E2D224F7400865FD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C9E926122D224F7400865FD7 /* PBXTargetDependency */,
+			);
+			name = SoundWaveTrackerUITests;
+			packageProductDependencies = (
+			);
+			productName = SoundWaveTrackerUITests;
+			productReference = C9E926102D224F7400865FD7 /* SoundWaveTrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C9E925E82D224F7400865FD7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1610;
+				LastUpgradeCheck = 1610;
+				TargetAttributes = {
+					C9E925EF2D224F7400865FD7 = {
+						CreatedOnToolsVersion = 16.1;
+					};
+					C9E926052D224F7400865FD7 = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = C9E925EF2D224F7400865FD7;
+					};
+					C9E9260F2D224F7400865FD7 = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = C9E925EF2D224F7400865FD7;
+					};
+				};
+			};
+			buildConfigurationList = C9E925EB2D224F7400865FD7 /* Build configuration list for PBXProject "SoundWaveTracker" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C9E925E72D224F7400865FD7;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = C9E925F12D224F7400865FD7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C9E925EF2D224F7400865FD7 /* SoundWaveTracker */,
+				C9E926052D224F7400865FD7 /* SoundWaveTrackerTests */,
+				C9E9260F2D224F7400865FD7 /* SoundWaveTrackerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C9E925EE2D224F7400865FD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9E9269F2D2672C900865FD7 /* Adriano-celentano-o-perke.mp3 in Resources */,
+				C9E926A02D2672C900865FD7 /* Holidays-in-miami.mp3 in Resources */,
+				C9E926A12D2672C900865FD7 /* Piano-moment.mp3 in Resources */,
+				C9E926A22D2672C900865FD7 /* Ricchi e Poveri - Come Vorrei.mp3 in Resources */,
+				C9E926A32D2672C900865FD7 /* Ricchi e Poveri - Sarа perche ti amo.mp3 in Resources */,
+				C9E926A42D2672C900865FD7 /* Assets.xcassets in Resources */,
+				C9E926A62D2672C900865FD7 /* LaunchScreen.storyboard in Resources */,
+				C9E926A72D2672C900865FD7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9E926042D224F7400865FD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9E9260E2D224F7400865FD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C9E925EC2D224F7400865FD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9E926CF2D28532200865FD7 /* ImageSet.swift in Sources */,
+				C9E926A82D2672C900865FD7 /* AppDelegate.swift in Sources */,
+				C9E926A92D2672C900865FD7 /* SceneDelegate.swift in Sources */,
+				C9E926BA2D2682FB00865FD7 /* UIColor+Extensions.swift in Sources */,
+				C9E926AA2D2672C900865FD7 /* AudioPlayerNode.swift in Sources */,
+				C9E926CB2D284BB600865FD7 /* WaveformStyle.swift in Sources */,
+				C9E926BF2D26F0EB00865FD7 /* AudioFileService.swift in Sources */,
+				C9E926AB2D2672C900865FD7 /* AudioWaveformView.swift in Sources */,
+				C9E926C92D284A5B00865FD7 /* AVConstants.swift in Sources */,
+				C9E926AC2D2672C900865FD7 /* Constants.swift in Sources */,
+				C9E926AD2D2672C900865FD7 /* ViewController.swift in Sources */,
+				C9E926C12D271E2900865FD7 /* AudioConstants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9E926022D224F7400865FD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9E926B02D26731800865FD7 /* SoundWaveTrackerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9E9260C2D224F7400865FD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9E926B42D26731D00865FD7 /* SoundWaveTrackerUITests.swift in Sources */,
+				C9E926B52D26731D00865FD7 /* SoundWaveTrackerUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C9E926082D224F7400865FD7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9E925EF2D224F7400865FD7 /* SoundWaveTracker */;
+			targetProxy = C9E926072D224F7400865FD7 /* PBXContainerItemProxy */;
+		};
+		C9E926122D224F7400865FD7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9E925EF2D224F7400865FD7 /* SoundWaveTracker */;
+			targetProxy = C9E926112D224F7400865FD7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C9E9269B2D2672C900865FD7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9E9269A2D2672C900865FD7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C9E9269D2D2672C900865FD7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9E9269C2D2672C900865FD7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C9E9261A2D224F7400865FD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SoundWaveTracker/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "grigory.arm.developer-gmail.com.PlaybackStatus.SoundWaveTracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C9E9261B2D224F7400865FD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SoundWaveTracker/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "grigory.arm.developer-gmail.com.PlaybackStatus.SoundWaveTracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C9E9261C2D224F7400865FD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C9E9261D2D224F7400865FD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C9E9261F2D224F7400865FD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "grigory.arm.developer-gmail.com.PlaybackStatus.SoundWaveTrackerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SoundWaveTracker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SoundWaveTracker";
+			};
+			name = Debug;
+		};
+		C9E926202D224F7400865FD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "grigory.arm.developer-gmail.com.PlaybackStatus.SoundWaveTrackerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SoundWaveTracker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SoundWaveTracker";
+			};
+			name = Release;
+		};
+		C9E926222D224F7400865FD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "grigory.arm.developer-gmail.com.PlaybackStatus.SoundWaveTrackerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SoundWaveTracker;
+			};
+			name = Debug;
+		};
+		C9E926232D224F7400865FD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "grigory.arm.developer-gmail.com.PlaybackStatus.SoundWaveTrackerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SoundWaveTracker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C9E925EB2D224F7400865FD7 /* Build configuration list for PBXProject "SoundWaveTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9E9261C2D224F7400865FD7 /* Debug */,
+				C9E9261D2D224F7400865FD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9E926192D224F7400865FD7 /* Build configuration list for PBXNativeTarget "SoundWaveTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9E9261A2D224F7400865FD7 /* Debug */,
+				C9E9261B2D224F7400865FD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9E9261E2D224F7400865FD7 /* Build configuration list for PBXNativeTarget "SoundWaveTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9E9261F2D224F7400865FD7 /* Debug */,
+				C9E926202D224F7400865FD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9E926212D224F7400865FD7 /* Build configuration list for PBXNativeTarget "SoundWaveTrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9E926222D224F7400865FD7 /* Debug */,
+				C9E926232D224F7400865FD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C9E925E82D224F7400865FD7 /* Project object */;
+}
