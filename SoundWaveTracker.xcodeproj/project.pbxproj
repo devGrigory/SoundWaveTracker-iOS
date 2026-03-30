@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C97FBB6C2F7A242800F51F9D /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97FBB6B2F7A242700F51F9D /* UIView+Extension.swift */; };
 		C9E9269F2D2672C900865FD7 /* Adriano-celentano-o-perke.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9E9268B2D2672C900865FD7 /* Adriano-celentano-o-perke.mp3 */; };
 		C9E926A02D2672C900865FD7 /* Holidays-in-miami.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9E9268C2D2672C900865FD7 /* Holidays-in-miami.mp3 */; };
 		C9E926A12D2672C900865FD7 /* Piano-moment.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9E9268D2D2672C900865FD7 /* Piano-moment.mp3 */; };
@@ -19,17 +20,13 @@
 		C9E926A92D2672C900865FD7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E926892D2672C900865FD7 /* SceneDelegate.swift */; };
 		C9E926AA2D2672C900865FD7 /* AudioPlayerNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E926912D2672C900865FD7 /* AudioPlayerNode.swift */; };
 		C9E926AB2D2672C900865FD7 /* AudioWaveformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E926922D2672C900865FD7 /* AudioWaveformView.swift */; };
-		C9E926AC2D2672C900865FD7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E926942D2672C900865FD7 /* Constants.swift */; };
 		C9E926AD2D2672C900865FD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E926962D2672C900865FD7 /* ViewController.swift */; };
 		C9E926B02D26731800865FD7 /* SoundWaveTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E926AE2D26731800865FD7 /* SoundWaveTrackerTests.swift */; };
 		C9E926B42D26731D00865FD7 /* SoundWaveTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E926B12D26731D00865FD7 /* SoundWaveTrackerUITests.swift */; };
 		C9E926B52D26731D00865FD7 /* SoundWaveTrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E926B22D26731D00865FD7 /* SoundWaveTrackerUITestsLaunchTests.swift */; };
-		C9E926BA2D2682FB00865FD7 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E926B92D2682F300865FD7 /* UIColor+Extensions.swift */; };
 		C9E926BF2D26F0EB00865FD7 /* AudioFileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E926BE2D26F0E900865FD7 /* AudioFileService.swift */; };
-		C9E926C12D271E2900865FD7 /* AudioConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E926C02D271E2400865FD7 /* AudioConstants.swift */; };
-		C9E926C92D284A5B00865FD7 /* AVConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E926C82D284A5900865FD7 /* AVConstants.swift */; };
+		C9E926C12D271E2900865FD7 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E926C02D271E2400865FD7 /* AppConstants.swift */; };
 		C9E926CB2D284BB600865FD7 /* WaveformStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E926CA2D284BB000865FD7 /* WaveformStyle.swift */; };
-		C9E926CF2D28532200865FD7 /* ImageSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E926CE2D28530700865FD7 /* ImageSet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C97FBB6B2F7A242700F51F9D /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		C9E925F02D224F7400865FD7 /* SoundWaveTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundWaveTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9E926062D224F7400865FD7 /* SoundWaveTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoundWaveTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9E926102D224F7400865FD7 /* SoundWaveTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoundWaveTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,7 +60,6 @@
 		C9E9268F2D2672C900865FD7 /* Ricchi e Poveri - Sarа perche ti amo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Ricchi e Poveri - Sarа perche ti amo.mp3"; sourceTree = "<group>"; };
 		C9E926912D2672C900865FD7 /* AudioPlayerNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerNode.swift; sourceTree = "<group>"; };
 		C9E926922D2672C900865FD7 /* AudioWaveformView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioWaveformView.swift; sourceTree = "<group>"; };
-		C9E926942D2672C900865FD7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C9E926962D2672C900865FD7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C9E926982D2672C900865FD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9E926992D2672C900865FD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -71,12 +68,9 @@
 		C9E926AE2D26731800865FD7 /* SoundWaveTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundWaveTrackerTests.swift; sourceTree = "<group>"; };
 		C9E926B12D26731D00865FD7 /* SoundWaveTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundWaveTrackerUITests.swift; sourceTree = "<group>"; };
 		C9E926B22D26731D00865FD7 /* SoundWaveTrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundWaveTrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		C9E926B92D2682F300865FD7 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		C9E926BE2D26F0E900865FD7 /* AudioFileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioFileService.swift; sourceTree = "<group>"; };
-		C9E926C02D271E2400865FD7 /* AudioConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioConstants.swift; sourceTree = "<group>"; };
-		C9E926C82D284A5900865FD7 /* AVConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVConstants.swift; sourceTree = "<group>"; };
+		C9E926C02D271E2400865FD7 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		C9E926CA2D284BB000865FD7 /* WaveformStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveformStyle.swift; sourceTree = "<group>"; };
-		C9E926CE2D28530700865FD7 /* ImageSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +98,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C97FBB6A2F7A23FF00F51F9D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C97FBB6B2F7A242700F51F9D /* UIView+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		C9E925E72D224F7400865FD7 = {
 			isa = PBXGroup;
 			children = (
@@ -136,14 +138,6 @@
 			path = AudioLibrary;
 			sourceTree = "<group>";
 		};
-		C9E926952D2672C900865FD7 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				C9E926B92D2682F300865FD7 /* UIColor+Extensions.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
 		C9E926972D2672C900865FD7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +154,7 @@
 				C9E926B62D2681D900865FD7 /* Model */,
 				C9E926B72D2681E800865FD7 /* View */,
 				C9E926972D2672C900865FD7 /* Controller */,
+				C97FBB6A2F7A23FF00F51F9D /* Extension */,
 				C9E926BC2D2699B600865FD7 /* Resources */,
 			);
 			path = SoundWaveTracker;
@@ -187,7 +182,6 @@
 			children = (
 				C9E926BB2D26983400865FD7 /* Audio */,
 				C9E926BD2D26F03A00865FD7 /* Services */,
-				C9E926952D2672C900865FD7 /* Extensions */,
 				C9E926B82D26826F00865FD7 /* Helpers */,
 			);
 			path = Model;
@@ -205,9 +199,7 @@
 		C9E926B82D26826F00865FD7 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				C9E926C02D271E2400865FD7 /* AudioConstants.swift */,
-				C9E926C82D284A5900865FD7 /* AVConstants.swift */,
-				C9E926942D2672C900865FD7 /* Constants.swift */,
+				C9E926C02D271E2400865FD7 /* AppConstants.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -216,7 +208,6 @@
 			isa = PBXGroup;
 			children = (
 				C9E926912D2672C900865FD7 /* AudioPlayerNode.swift */,
-				C9E926902D2672C900865FD7 /* AudioLibrary */,
 			);
 			path = Audio;
 			sourceTree = "<group>";
@@ -224,7 +215,7 @@
 		C9E926BC2D2699B600865FD7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				C9E926CE2D28530700865FD7 /* ImageSet.swift */,
+				C9E926902D2672C900865FD7 /* AudioLibrary */,
 				C9E926982D2672C900865FD7 /* Assets.xcassets */,
 				C9E9269B2D2672C900865FD7 /* LaunchScreen.storyboard */,
 				C9E9269D2D2672C900865FD7 /* Main.storyboard */,
@@ -384,18 +375,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9E926CF2D28532200865FD7 /* ImageSet.swift in Sources */,
+				C97FBB6C2F7A242800F51F9D /* UIView+Extension.swift in Sources */,
 				C9E926A82D2672C900865FD7 /* AppDelegate.swift in Sources */,
 				C9E926A92D2672C900865FD7 /* SceneDelegate.swift in Sources */,
-				C9E926BA2D2682FB00865FD7 /* UIColor+Extensions.swift in Sources */,
 				C9E926AA2D2672C900865FD7 /* AudioPlayerNode.swift in Sources */,
 				C9E926CB2D284BB600865FD7 /* WaveformStyle.swift in Sources */,
 				C9E926BF2D26F0EB00865FD7 /* AudioFileService.swift in Sources */,
 				C9E926AB2D2672C900865FD7 /* AudioWaveformView.swift in Sources */,
-				C9E926C92D284A5B00865FD7 /* AVConstants.swift in Sources */,
-				C9E926AC2D2672C900865FD7 /* Constants.swift in Sources */,
 				C9E926AD2D2672C900865FD7 /* ViewController.swift in Sources */,
-				C9E926C12D271E2900865FD7 /* AudioConstants.swift in Sources */,
+				C9E926C12D271E2900865FD7 /* AppConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

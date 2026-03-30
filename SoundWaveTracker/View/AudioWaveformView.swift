@@ -41,17 +41,17 @@ final class AudioWaveformView: UIView {
         super.layoutSubviews()
         backgroundGradientLayer.frame = bounds
         /// Ensure the gradient respects the corner radius
-        backgroundGradientLayer.cornerRadius = Constants.viewCornerRadius
+        backgroundGradientLayer.cornerRadius = AppConstants.UI.viewCornerRadius
     }
     
     // MARK: - Layer Setup
     private func initializeLayers() {
         setupWaveformLayer()
-        setupGradientLayer()
+        setupBorder()
     }
     
     private func setupWaveformLayer() {
-        waveformLayer.strokeColor = UIColor.softBlueColor.cgColor
+        waveformLayer.strokeColor = UIColor.natureGreen.cgColor
         waveformLayer.fillColor = UIColor.clear.cgColor
         waveformLayer.lineWidth = barWidth
         waveformLayer.lineJoin = .round
@@ -59,20 +59,13 @@ final class AudioWaveformView: UIView {
         layer.addSublayer(waveformLayer)
     }
     
-    private func setupGradientLayer() {
-        backgroundGradientLayer.colors = [
-            /// Top color
-            UIColor.darkPurpleColor.cgColor,
-            /// Bottom color
-            UIColor.deepNightBlueColor.cgColor
-        ]
-        backgroundGradientLayer.startPoint = CGPoint(x: 0.0, y: 0.0)
-        backgroundGradientLayer.endPoint = CGPoint(x: 0.0, y: 1.0)
-        layer.insertSublayer(backgroundGradientLayer, at: 0)
+    private func setupBorder() {
+        self.layer.borderColor = UIColor.white10.cgColor
+        self.layer.borderWidth = 1.5
     }
     
     private func applyCornerRadius() {
-        layer.cornerRadius = Constants.viewCornerRadius
+        layer.cornerRadius = AppConstants.UI.viewCornerRadius
         /// Ensures sublayers respect the corner radius
         layer.masksToBounds = true
     }
@@ -86,20 +79,20 @@ final class AudioWaveformView: UIView {
         /// Calculate the content width available for bars
         let contentWidth = bounds.width - 4 * barWidth
         /// Calculate spacing between bars
-        let barSpacing: CGFloat = (contentWidth - (AVConstants.barSpacingFactor * barWidth)) / (AVConstants.barSpacingFactor - 1)
+        let barSpacing: CGFloat = (contentWidth - (AppConstants.AV.barSpacingFactor * barWidth)) / (AppConstants.AV.barSpacingFactor - 1)
         /// Define the maximum height available for bars
         let maxHeight = bounds.height
         /// Normalize the waveform data to fit within the height constraints
-        let normalizedData = waveformData.map { CGFloat($0) / (AVConstants.magnitude + AVConstants.topLinePadding) * maxHeight }
+        let normalizedData = waveformData.map { CGFloat($0) / (AppConstants.AV.magnitude + AppConstants.AV.topLinePadding) * maxHeight }
         /// Set the initial X position for drawing bars
-        var currentX: CGFloat = AVConstants.leftLinePadding + (2 * barWidth)
+        var currentX: CGFloat = AppConstants.AV.leftLinePadding + (2 * barWidth)
         /// Iterate over normalized data to draw bars or centered lines
         for height in normalizedData {
             switch style {
             case .bars:
                 /// Draw bars starting from the bottom of the view
-                let startPoint = CGPoint(x: currentX, y: maxHeight - AVConstants.bottomLinePadding)
-                let endPoint = CGPoint(x: currentX, y: maxHeight - AVConstants.bottomLinePadding - height)
+                let startPoint = CGPoint(x: currentX, y: maxHeight - AppConstants.AV.bottomLinePadding)
+                let endPoint = CGPoint(x: currentX, y: maxHeight - AppConstants.AV.bottomLinePadding - height)
                 path.move(to: startPoint)
                 path.addLine(to: endPoint)
             case .centeredLines:

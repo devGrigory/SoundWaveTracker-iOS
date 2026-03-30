@@ -81,18 +81,18 @@ final class AudioPlayerNode {
         /// Perform the FFT operation
         vDSP_DFT_Execute(setup, &realPartInput, &imaginaryPartInput, &realPartOutput, &imaginaryPartOutput)
         /// Compute magnitudes of frequency components
-        var magnitudes = [Float](repeating: 0, count: AVConstants.outputCount)
+        var magnitudes = [Float](repeating: 0, count: AppConstants.AV.outputCount)
         realPartOutput.withUnsafeMutableBufferPointer { realBufferPointer in
             imaginaryPartOutput.withUnsafeMutableBufferPointer { imaginaryBufferPointer in
                 var complexData = DSPSplitComplex(realp: realBufferPointer.baseAddress!,
                                                   imagp: imaginaryBufferPointer.baseAddress!)
-                vDSP_zvabs(&complexData, 1, &magnitudes, 1, UInt(AVConstants.outputCount))
+                vDSP_zvabs(&complexData, 1, &magnitudes, 1, UInt(AppConstants.AV.outputCount))
             }
         }
         /// Normalize the magnitudes
-        var normalizedMagnitudes = [Float](repeating: 0, count: AVConstants.outputCount)
+        var normalizedMagnitudes = [Float](repeating: 0, count: AppConstants.AV.outputCount)
         var scalingFactor: Float = 1.0
-        vDSP_vsmul(&magnitudes, 1, &scalingFactor, &normalizedMagnitudes, 1, UInt(AVConstants.outputCount))
+        vDSP_vsmul(&magnitudes, 1, &scalingFactor, &normalizedMagnitudes, 1, UInt(AppConstants.AV.outputCount))
         return normalizedMagnitudes
     }
     

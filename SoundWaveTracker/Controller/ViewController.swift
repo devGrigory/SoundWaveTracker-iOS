@@ -22,6 +22,7 @@ class ViewController: UIViewController {
     @IBOutlet private weak var slideableWidthConstraint: NSLayoutConstraint!
     @IBOutlet private weak var slidableContainerView: UIView!
     @IBOutlet private weak var controlsView: UIView!
+    @IBOutlet private weak var emptyView: UIView!
     @IBOutlet private weak var waveformView: AudioWaveformView!
     
     //MARK: - Private Properties
@@ -35,9 +36,18 @@ class ViewController: UIViewController {
     //MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        updateUI()
+        setupUI()
         configureDelegates()
         configureAudioServices()
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+
+        view.setVerticalGradient(
+            topColor: UIColor(.midnightBlue),
+            bottomColor: UIColor(.charcoalBlack)
+        )
     }
     
     //MARK: - IB Actions
@@ -65,28 +75,45 @@ class ViewController: UIViewController {
     }
     
     //MARK: - Private Methods
-    private func updateUI() {
-        previousButton.layer.cornerRadius = Constants.buttonCornerRadius
-        playPauseButton.layer.cornerRadius = Constants.buttonCornerRadius
-        nextButton.layer.cornerRadius = Constants.buttonCornerRadius
-        controlsView.layer.cornerRadius = Constants.viewCornerRadius
+    private func setupUI() {
+        setupCornerRadius()
+        setupControlsViewAppearance()
+        setupVolumeSlider()
+        updateButtonStates()
+    }
+    
+    private func setupCornerRadius() {
+        previousButton.layer.cornerRadius = AppConstants.UI.buttonCornerRadius
+        playPauseButton.layer.cornerRadius = AppConstants.UI.buttonCornerRadius
+        nextButton.layer.cornerRadius = AppConstants.UI.buttonCornerRadius
+        emptyView.layer.cornerRadius = AppConstants.UI.viewCornerRadius
+        controlsView.layer.cornerRadius = AppConstants.UI.viewCornerRadius
+    }
+    
+    private func setupControlsViewAppearance() {
+        emptyView.layer.borderColor = UIColor.white10.cgColor
+        emptyView.layer.borderWidth = 1.5
+        controlsView.layer.borderColor = UIColor.white10.cgColor
+        controlsView.layer.borderWidth = 1.5
+    }
+    
+    private func setupVolumeSlider() {
         let thumbImage = createRoundedThumbImage()
-        /// Ensure same thumb image for states
+        
         volumeSlider.setThumbImage(thumbImage, for: .normal)
         volumeSlider.setThumbImage(thumbImage, for: .highlighted)
         volumeSlider.setThumbImage(thumbImage, for: .selected)
-        previousButton.isEnabled = false
     }
     
     /// Create a custom thumb image with rounded corners
     private func createRoundedThumbImage() -> UIImage {
-        let thumbSize = CGSize(width: Constants.diameter, height: Constants.diameter)
+        let thumbSize = CGSize(width: AppConstants.UI.diameter, height: AppConstants.UI.diameter)
         /// Create a renderer to draw the thumb image
         let renderer = UIGraphicsImageRenderer(size: thumbSize)
         /// Create the image with rounded corners
         return renderer.image { _ in
             /// Set color (change to desired color)
-            UIColor.softLavender.setFill()
+            UIColor.white.setFill()
             let path = UIBezierPath(roundedRect: CGRect(origin: .zero, size: thumbSize),
                                     cornerRadius: thumbSize.width / 2)
             path.fill()
@@ -102,7 +129,7 @@ class ViewController: UIViewController {
     /// Configure and start audio services
     private func configureAudioServices() {
         /// Start loading files
-        audioFileService.fetchAudioFileURLs(from: AudioConstants.audioSourceFiles)
+        audioFileService.fetchAudioFileURLs(from: AppConstants.Audio.audioSourceFiles)
         audioPlayer.configurePlayerNode(with: audioFiles)
     }
     
@@ -123,7 +150,7 @@ class ViewController: UIViewController {
         playbackTimer = Timer.scheduledTimer(withTimeInterval: timeInterval, repeats: true) { [weak self] _ in
                 guard let self = self else { return }
                 /// Update FFT visualization (if applicable)
-                self.waveformView.waveformData = audioPlayer.fftMagnitudes.map { min($0, AVConstants.maxMagnitude) }
+            self.waveformView.waveformData = audioPlayer.fftMagnitudes.map { min($0, AppConstants.AV.maxMagnitude) }
                 /// Dynamically calculate elapsed time
                 guard let nodeTime = audioPlayer.player.lastRenderTime,
                       let playerTime = audioPlayer.player.playerTime(forNodeTime: nodeTime) else {
@@ -190,16 +217,16 @@ class ViewController: UIViewController {
     }
     
     private func updateVolumeIcon(for volumeValue: Float) {
-        volumeImageView.image = (volumeValue == 0.0) ? ImageSet.slashSpeakerImage : ImageSet.speakerImage
+        volumeImageView.image = (volumeValue == 0.0) ? AppConstants.Images.slashSpeakerImage : AppConstants.Images.speakerImage
     }
     
     private func updateButtonStates() {
         // Update play/pause button image
         let playPauseImage: UIImage?
         if audioPlayer.isPlaying || audioPlayer.isManuallyStopped {
-            playPauseImage = ImageSet.pauseImage
+            playPauseImage = AppConstants.Images.pauseImage
         } else {
-            playPauseImage = ImageSet.playImage
+            playPauseImage = AppConstants.Images.playImage
         }
         playPauseButton.setImage(playPauseImage, for: .normal)
         // Update previous and next button states
