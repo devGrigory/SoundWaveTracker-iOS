@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		C97FBB6C2F7A242800F51F9D /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97FBB6B2F7A242700F51F9D /* UIView+Extension.swift */; };
-		C97FBB762F7B06DD00F51F9D /* centeredLines_waveform_animation.png in Resources */ = {isa = PBXBuildFile; fileRef = C97FBB752F7B06DD00F51F9D /* centeredLines_waveform_animation.png */; };
 		C9E9269F2D2672C900865FD7 /* Adriano-celentano-o-perke.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9E9268B2D2672C900865FD7 /* Adriano-celentano-o-perke.mp3 */; };
 		C9E926A02D2672C900865FD7 /* Holidays-in-miami.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9E9268C2D2672C900865FD7 /* Holidays-in-miami.mp3 */; };
 		C9E926A12D2672C900865FD7 /* Piano-moment.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9E9268D2D2672C900865FD7 /* Piano-moment.mp3 */; };
@@ -49,7 +48,6 @@
 
 /* Begin PBXFileReference section */
 		C97FBB6B2F7A242700F51F9D /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
-		C97FBB752F7B06DD00F51F9D /* centeredLines_waveform_animation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = centeredLines_waveform_animation.png; sourceTree = "<group>"; };
 		C9E925F02D224F7400865FD7 /* SoundWaveTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundWaveTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9E926062D224F7400865FD7 /* SoundWaveTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoundWaveTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9E926102D224F7400865FD7 /* SoundWaveTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoundWaveTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,14 +106,6 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
-		C97FBB722F7B06C200F51F9D /* Screenshot */ = {
-			isa = PBXGroup;
-			children = (
-				C97FBB752F7B06DD00F51F9D /* centeredLines_waveform_animation.png */,
-			);
-			path = Screenshot;
-			sourceTree = "<group>";
-		};
 		C9E925E72D224F7400865FD7 = {
 			isa = PBXGroup;
 			children = (
@@ -165,7 +155,6 @@
 				C9E926B72D2681E800865FD7 /* View */,
 				C9E926972D2672C900865FD7 /* Controller */,
 				C97FBB6A2F7A23FF00F51F9D /* Extension */,
-				C97FBB722F7B06C200F51F9D /* Screenshot */,
 				C9E926BC2D2699B600865FD7 /* Resources */,
 			);
 			path = SoundWaveTracker;
@@ -356,7 +345,6 @@
 			files = (
 				C9E9269F2D2672C900865FD7 /* Adriano-celentano-o-perke.mp3 in Resources */,
 				C9E926A02D2672C900865FD7 /* Holidays-in-miami.mp3 in Resources */,
-				C97FBB762F7B06DD00F51F9D /* centeredLines_waveform_animation.png in Resources */,
 				C9E926A12D2672C900865FD7 /* Piano-moment.mp3 in Resources */,
 				C9E926A22D2672C900865FD7 /* Ricchi e Poveri - Come Vorrei.mp3 in Resources */,
 				C9E926A32D2672C900865FD7 /* Ricchi e Poveri - Sarа perche ti amo.mp3 in Resources */,
