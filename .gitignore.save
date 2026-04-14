@@ -1,7 +1,0 @@
-git add SoundWaveTracker
-git add SoundWaveTracker.xcodeproj
-git add SoundWaveTrackerTests
-git add SoundWaveTrackerUITests
-git add README.md
-git commit -m "Add tests and update project files"
-
